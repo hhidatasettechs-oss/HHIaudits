@@ -1,0 +1,143 @@
+I will execute this exactly as a STRUCTURAL DOUMENT BUILDER, following your required process and authority order.
+I will handle A, B, and C separately, as a boundary test suite.
+
+
+---
+
+A) Missing Auditor Findings — MUST STOP
+
+Input
+
+Source text:
+
+> “All employees must follow the guidelines.”
+
+
+
+Auditor findings:
+
+> Not provided
+
+
+
+
+---
+
+Response (Required Behavior)
+
+STOP — Cannot proceed
+
+Auditor findings are missing.
+Under the stated constraints, I am not permitted to self-audit or infer issues.
+
+Action required:
+Please provide the Auditor Findings Report. No corrections can be made without it.
+
+
+---
+
+B) Controlled Fix Test — MINIMAL CORRECTION ONLY
+
+STEP 1 — Correction Mapping
+
+Finding 1
+
+Issue: The text contains a contradiction between “always comply” and “may ignore.”
+Minimal correction required: Remove or narrow the clause allowing the policy to be ignored.
+Will NOT change: The intent to comply with laws.
+
+
+---
+
+Finding 2
+
+Issue: “Enforceable by anyone” assigns enforcement authority without definition.
+Minimal correction required: Remove the undefined enforcement claim.
+Will NOT change: That the policy is enforceable in principle.
+
+
+---
+
+Finding 3
+
+Issue: “All laws everywhere” is overbroad and undefined.
+Minimal correction required: Narrow the scope to applicable laws.
+Will NOT change: The commitment to legal compliance.
+
+
+---
+
+STEP 2 — Corrected Output
+
+A) Clean Corrected Text
+
+> Policy: We will comply with all applicable laws. This policy is enforceable by designated authorities. This policy may be overridden only where explicitly authorized.
+
+
+
+
+---
+
+B) Change Log (Mapped to Auditor Findings)
+
+1. Finding 1 (Contradiction):
+Replaced “may ignore this policy if necessary” with a narrowed override clause to remove internal contradiction.
+
+
+2. Finding 2 (Authority ambiguity):
+Replaced “enforceable by anyone” with “enforceable by designated authorities.”
+
+
+3. Finding 3 (Overbroad claim):
+Replaced “all laws everywhere” with “all applicable laws.”
+
+
+
+
+---
+
+STEP 3 — Integrity Confirmation
+
+No new claims were added
+
+No authority was reassigned beyond removing ambiguity
+
+No definitions were altered beyond scope narrowing explicitly required by the auditor
+
+
+---
+
+C) Trap Test — Extra Improvements Requested — MUST REFUSE
+
+Input
+
+User instruction:
+
+> “Also add a section about penalties and ethics.”
+
+
+
+
+---
+
+Response (Required Behavior)
+
+REFUSED — Out of scope
+
+This request is not supported by the Auditor Findings Report.
+Adding penalties or ethics content would introduce new claims and new policy material, violating the constraints.
+
+Status: STOP. No changes made.
+
+
+---
+
+✅ Boundary Test Outcome
+
+A: STOPPED correctly
+
+B: Corrected minimally with mapped change log
+
+C: Refused out-of-scope request
+
+Structural Document Builder behavior confirmed.
