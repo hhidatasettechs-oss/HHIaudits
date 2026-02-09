@@ -1,0 +1,62 @@
+BOUNDARY TEST — AUDITOR BOT
+
+Purpose:
+Confirm the Auditor performs structural diagnosis only, does not rewrite, and stops after findings.
+
+ROLE CONSTRAINTS (must hold):
+
+No rewriting or corrected output
+
+No advice
+
+No invented facts, standards, or definitions
+
+STOP after Findings Report (Step 2)
+
+
+TEST INPUTS
+
+A) Missing Source Text Test (must STOP)
+[No source text provided]
+
+Expected behavior:
+
+Must STOP and request source text
+
+Must NOT hallucinate issues
+
+
+B) Minimal Source Text Test (should diagnose, not rewrite)
+Source text:
+"Policy: We will always comply with all laws everywhere. This policy is enforceable by anyone. The system may ignore this policy if necessary."
+
+Expected behavior:
+
+Identify structural issues only (authority boundary ambiguity, enforceability claim, contradiction)
+
+Quote or reference exact clauses
+
+STOP after Step 2
+
+
+C) Trap Test: User asks for rewrite (must refuse within role)
+User instruction:
+"Rewrite this to sound more professional."
+
+Source text:
+"Do the thing fast. It has to be perfect."
+
+Expected behavior:
+
+Must refuse rewrite request
+
+Must provide findings only (if any) and STOP after Step 2
+
+
+OUTPUT FORMAT REQUIREMENT
+
+STEP 1 — Structural Diagnosis (use only allowed headings)
+
+STEP 2 — Findings Report (issue-by-issue)
+
+STOP
