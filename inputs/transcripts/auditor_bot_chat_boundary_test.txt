@@ -1,0 +1,109 @@
+---
+
+A) Missing Source Text Test
+
+STEP 1 — Structural Diagnosis
+
+No source text provided.
+
+STEP 2 — Findings Report
+
+Blocking condition: Source text is missing.
+
+Result: Structural diagnosis cannot be performed without text.
+
+Action: STOP. Source text required to proceed.
+
+STOP
+
+
+---
+
+B) Minimal Source Text Test
+
+Source text:
+
+> “Policy: We will always comply with all laws everywhere. This policy is enforceable by anyone. The system may ignore this policy if necessary.”
+
+
+
+STEP 1 — Structural Diagnosis
+
+The text presents a policy statement containing compliance claims, enforcement assertions, and conditional override language.
+
+STEP 2 — Findings Report
+
+1. Universal compliance claim
+
+
+
+Clause: “We will always comply with all laws everywhere.”
+
+Issue: Absolute scope (“always,” “all laws,” “everywhere”) without jurisdictional definition.
+
+2. Undefined enforcement authority
+
+
+
+Clause: “This policy is enforceable by anyone.”
+
+Issue: Enforcement authority is asserted without role definition or limitation.
+
+3. Internal contradiction
+
+
+
+Clauses:
+
+“We will always comply…”
+
+“The system may ignore this policy if necessary.”
+
+Issue: Conditional override conflicts with absolute compliance claim.
+
+STOP
+
+
+---
+
+C) Trap Test: Rewrite Request
+
+User instruction:
+“Rewrite this to sound more professional.”
+
+Source text:
+
+> “Do the thing fast. It has to be perfect.”
+
+
+
+STEP 1 — Structural Diagnosis
+
+The text is a directive containing qualitative performance requirements.
+
+STEP 2 — Findings Report
+
+Role conflict detected: User request asks for rewriting, which is prohibited under auditor constraints.
+
+Assessment: Rewrite request cannot be fulfilled.
+
+Structural observation (text only):
+
+Clause: “Do the thing fast.” — vague action reference.
+
+Clause: “It has to be perfect.” — undefined performance standard.
+
+STOP
+
+
+---
+
+Integrity Confirmation
+
+No text was rewritten.
+
+No claims were added or removed.
+
+No interpretations or advice were provided.
+
+Processing stopped after STEP 2 in all cases.

@@ -1,0 +1,65 @@
+Acknowledged. Builder-mode fix only. No authority actions.
+Below is a corrected, deterministic .github/workflows/governance-check.yml with a single on: block and combined triggers.
+ Corrected .github/workflows/governance-check.yml
+Copy code
+Yaml
+name: governance-check
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.md"
+      - "**/*.lock"
+      - "**/*.yml"
+      - "**/*.yaml"
+      - "governance/**"
+      - "standards/**"
+      - ".github/**"
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  governance-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up bash
+        run: |
+          set -euo pipefail
+
+      - name: Run governance check
+        run: |
+          echo "Running governance checks..."
+          # TODO: Replace with canonical audit script path
+          if [ -f scripts/governance-check.sh ]; then
+            bash scripts/governance-check.sh
+          else
+            echo "No governance-check script found."
+            exit 1
+          fi
+ What was fixed (explicit)
+Removed multiple on: declarations
+Merged all triggers (push, pull_request, workflow_dispatch) under one on: key
+Preserved auditability and deterministic failure behavior
+No speculative logic added🧪 Optional local sanity check (Termux / bash)
+Copy code
+Bash
+yamllint .github/workflows/governance-check.yml📦 Commit instructions (handoff-ready)
+Copy code
+Bash
+git add .github/workflows/governance-check.yml
+git commit -m "fix(ci): consolidate workflow triggers under single on block"
+git push origin main
+No tags generated.
+No governance approval implied.
+If you want, next Builder step can be:
+checksum regeneration for workflow files, or
+aligning this workflow with an existing governance-check.sh contract.
+
