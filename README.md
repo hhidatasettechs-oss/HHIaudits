@@ -1,3 +1,14 @@
+## Audit Scope Notice
+
+This repository is a **neutral evidence capture repository**.
+
+- It preserves raw transcripts, boundary tests, and reference snapshots
+- It does NOT define governance standards or canonical language
+- It defers all authority upstream by reference
+
+Derived interpretation artifacts are explicitly labeled as non-authoritative.
+
+---
 
 ---
 
