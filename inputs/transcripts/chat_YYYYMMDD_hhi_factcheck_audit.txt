@@ -1,0 +1,562 @@
+Proceeding as a FACT / STRUCTURAL AUDITOR.
+No advice. No improvements. No interpretation.
+Only what artifacts and which repository they belong in based on your existing HHI repo roles.
+
+
+---
+
+DERIVABLE ARTIFACTS → REPOSITORY MAPPING
+
+1. Raw Interaction Evidence
+
+Artifact
+
+Full, unedited chat transcript
+
+Timestamped conversation log
+
+STOP / refusal / constraint-compliance moments
+
+
+Repo
+
+HHIaudits
+
+inputs/transcripts/
+
+inputs/boundary_tests/
+
+
+
+Why
+
+This repo is explicitly defined as primary evidence only
+
+No analysis, no rewriting, no conclusions
+
+
+
+---
+
+2. Boundary Test Execution Records
+
+Artifact
+
+Auditor-role boundary tests
+
+“Must STOP” compliance events
+
+Rewrite refusal events
+
+Hallucination-avoidance behavior
+
+
+Repo
+
+HHIaudits
+
+inputs/boundary_tests/
+
+EVIDENCE_LOG.md (append-only entry)
+
+
+
+
+---
+
+3. Role Constraint Declarations
+
+Artifact
+
+Explicit Auditor role instructions
+
+Authority order declarations
+
+STOP conditions defined by human authority
+
+
+Repo
+
+HHIaudits
+
+inputs/transcripts/
+
+Optional index in EVIDENCE_LOG.md
+
+
+
+Important
+
+These are constraints, not analysis
+
+Still raw evidence
+
+
+
+---
+
+4. Claim Inventory (Extracted, Not Judged)
+
+Artifact
+
+List of factual claims made by:
+
+Assistant
+
+User
+
+
+Claim IDs
+
+Exact quoted text
+
+
+Repo
+
+HHIaudits
+
+derived/claim_inventory/
+
+(Derived ≠ interpreted)
+
+
+
+
+
+---
+
+5. Verifiability Classification Table
+
+Artifact
+
+Claim → Verifiable / Not Verifiable / Normative
+
+No verdicts beyond classification
+
+
+Repo
+
+HHIaudits
+
+derived/verification_tables/
+
+
+
+
+---
+
+6. STOP / Governance Compliance Matrix
+
+Artifact
+
+Declared constraints vs observed behavior
+
+STOP compliance
+
+Refusal compliance
+
+
+Repo
+
+HHIaudits
+
+derived/compliance_matrices/
+
+
+
+
+---
+
+7. Canonical Text Snapshots (As Seen)
+
+Artifact
+
+HHI-GOV-01 pasted text
+
+Governance Glossary pasted text
+
+Version strings exactly as shown
+
+
+Repo
+
+HHIaudits
+
+reference_snapshots/
+
+
+
+Not
+
+❌ Not Hollow_House_Standards_Library
+
+❌ Not HHI_GOV_01 Because these are observed copies, not authority sources.
+
+
+
+---
+
+8. Drift Signals (Observed Only)
+
+Artifact
+
+Repeated “holding” states
+
+Execution pauses without violation
+
+Dependency on explicit STOP signals
+
+
+Repo
+
+HHIaudits
+
+observations/
+
+
+
+Note
+
+These are logged signals, not diagnoses
+
+
+
+---
+
+WHAT DOES NOT GO ANYWHERE YET
+
+The following cannot be committed to any repo without violating your own governance rules:
+
+Item	Reason
+
+Conclusions	Requires interpretation
+Recommendations	Advisory
+Governance judgments	Auditor role violation
+Improvements	Editorial
+Marketing framing	Disallowed use
+
+
+
+---
+
+QUICK MAP (ONE-GLANCE)
+
+Artifact	Repo
+
+Transcript	HHIaudits
+Boundary tests	HHIaudits
+STOP evidence	HHIaudits
+Claim inventory	HHIaudits
+Verification table	HHIaudits
+Compliance matrix	HHIaudits
+Canonical snapshots	HHIaudits
+Drift signals	HHIaudits
+
+
+
+---
+
+FINAL CONFIRMATION
+
+No text rewritten
+
+No intent inferred
+
+No advice given
+
+No repo roles crossed
+
+
+If you want, next compliant action is one of:
+
+“Generate file list for HHIaudits”
+
+“Create EVIDENCE_LOG entry text”
+
+“STOP”
+
+
+Otherwise: STOP
+You asked for Termux step-by-step to add chat-derived artifacts to repos. I will give procedural commands only (no policy wr
+iting, no repo modifications beyond the mechanics you requested). Assumption: you are committing to HHIaudits (primary evidence repo). If you instead want a different repo, replace the repo name in Step 2.
+
+
+---
+
+Step 0 — Open Termux and go to your HHI folder
+
+cd ~/HHI
+ls
+
+You should see your repos listed (including HHIaudits). If not, STOP.
+
+
+---
+
+Step 1 — Go into the evidence repo
+
+cd ~/HHI/HHIaudits
+pwd
+
+You should see something like: .../HHI/HHIaudits
+
+
+---
+
+Step 2 — Make folders for this chat’s artifacts
+
+(These names match what you’ve been using.)
+
+mkdir -p inputs/transcripts
+mkdir -p inputs/boundary_tests
+mkdir -p derived/claim_inventory
+mkdir -p derived/verification_tables
+mkdir -p derived/compliance_matrices
+mkdir -p reference_snapshots
+mkdir -p observations
+
+
+---
+
+Step 3 — Create the transcript file (paste the chat content)
+
+Create a new file:
+
+nano inputs/transcripts/chat_YYYYMMDD_hhi_factcheck_audit.txt
+
+Inside nano:
+
+1. Paste the raw transcript (or the relevant portion)
+
+
+2. Press CTRL + O (save)
+
+
+3. Press Enter
+
+
+4. Press CTRL + X (exit)
+
+
+
+
+---
+
+Step 4 — Add any boundary test input/output you ran
+
+If you have a boundary test snippet, create a file:
+
+nano inputs/boundary_tests/boundary_test_auditor_YYYYMMDD.txt
+
+Paste only the boundary test content you want recorded, then save/exit.
+
+
+---
+
+Step 5 — Add snapshot(s) of canonical text you pasted
+
+Example for HHI-GOV-01 excerpt:
+
+nano reference_snapshots/hhi_gov_01_excerpt_YYYYMMDD.txt
+
+Paste the excerpt exactly as it appeared, then save/exit.
+
+Example for glossary JSON snippet:
+
+nano reference_snapshots/glossary_json_excerpt_YYYYMMDD.txt
+
+
+---
+
+Step 6 — (Optional) Add the claim inventory / tables you already produced
+
+Claim inventory:
+
+nano derived/claim_inventory/claims_YYYYMMDD.txt
+
+Verifiability table:
+
+nano derived/verification_tables/verifiability_YYYYMMDD.txt
+
+Compliance matrix:
+
+nano derived/compliance_matrices/constraint_compliance_YYYYMMDD.txt
+
+Paste what you have, save/exit.
+
+
+---
+
+Step 7 — Check what changed
+
+git status
+
+You should see new files listed.
+
+
+---
+
+Step 8 — Stage the files
+
+Stage everything you added:
+
+git add inputs derived reference_snapshots observations
+
+(If you didn’t use some folders, that’s fine.)
+
+
+---
+
+Step 9 — Commit with a clean message
+
+Use a factual commit message:
+
+git commit -m "evidence: add chat transcript and derived audit artifacts (YYYYMMDD)"
+
+
+---
+
+Step 10 — Push to GitHub
+
+git push origin main
+
+
+---
+
+If push fails (common cases)
+
+Case A: “fetch first”
+
+git pull --rebase origin main
+git push origin main
+
+Case B: “protected branch” / “PR required”
+
+That means the repo requires changes via PR. Then you do:
+
+git checkout -b evidence/chat-YYYYMMDD
+git push -u origin evidence/chat-YYYYMMDD
+
+Then open GitHub in your browser and create a PR from that branch into main.
+
+
+---
+
+Minimal checklist (so you don’t miss anything)
+
+[ ] Transcript saved under inputs/transcripts/
+
+[ ] Any boundary test saved under inputs/boundary_tests/
+
+[ ] Snapshots saved under reference_snapshots/
+
+[ ] git status shows your files
+
+[ ] git add ...
+
+[ ] git commit ...
+
+[ ] git push ...
+
+
+If you paste your git status + any error from git push, I can classify the failure and tell you the next exact command only.
+Got it. This is a simple state check, and nothing is wrong.
+You currently do not have the evidence repo cloned yet. That’s why you don’t see HHIaudits.
+We’ll do this slow, literal, like-you’re-8.
+Step 1 — Decide WHERE evidence goes
+From an audit perspective, chat-derived artifacts belong in:
+✅ Repo: HHIaudits
+Why: It is a neutral evidence repository (raw transcripts, boundary tests, audit artifacts).
+They do not belong in:
+HHI_GOV_01 (that’s a standard)
+Master_License_Suite (that’s licensing authority)
+Hollow_House_Standards_Library (that’s definitions)
+So we will add a new repo locally.
+Step 2 — Clone the HHIaudits repository
+In Termux, run exactly:
+Bash
+Copy code
+cd ~/HHI
+git clone https://github.com/hollowhouseinstitute/HHIaudits.git
+What should happen
+Git downloads the repo
+A new folder appears called HHIaudits
+Step 3 — Confirm it exists
+Bash
+Copy code
+ls
+You should now see:
+Text
+Copy code
+HHI_GOV_01
+Hollow_House_Standards_Library
+Master_License_Suite
+HHIaudits
+If you do not see HHIaudits, STOP and tell me what error you see.
+Step 4 — Enter the evidence repo
+Bash
+Copy code
+cd ~/HHI/HHIaudits
+pwd
+It should print something ending in:
+Text
+Copy code
+/HHI/HHIaudits
+Step 5 — Create folders for THIS chat’s artifacts
+Run these one by one (copy–paste is fine):
+Bash
+Copy code
+mkdir -p inputs/transcripts
+mkdir -p inputs/boundary_tests
+mkdir -p derived/claim_inventory
+mkdir -p derived/verification_tables
+mkdir -p derived/compliance_matrices
+mkdir -p reference_snapshots
+These folders match what you already described in the audit.
+No new structure is invented here.
+Step 6 — Create the transcript file
+Bash
+Copy code
+nano inputs/transcripts/chat_YYYYMMDD_hhi_factcheck_audit.txt
+Inside nano:
+Paste the chat transcript (raw, no edits)
+Press CTRL + O → Enter
+Press CTRL + X
+Step 7 — Check what Git sees
+Bash
+Copy code
+git status
+You should see the new file listed as untracked.
+Step 8 — Stage the evidence
+Bash
+Copy code
+git add inputs derived reference_snapshots
+Step 9 — Commit (factual message only)
+Bash
+Copy code
+git commit -m "evidence: add chat transcript and derived audit artifacts (YYYYMMDD)"
+No opinions. No claims. Just what happened.
+Step 10 — Push to GitHub
+Bash
+Copy code
+git push origin main
+If Git refuses (very common)
+If it says “fetch first”:
+Bash
+Copy code
+git pull --rebase origin main
+git push origin main
+If it says “PR required”:
+Bash
+Copy code
+git checkout -b evidence/chat-YYYYMMDD
+git push -u origin evidence/chat-YYYYMMDD
+Then open GitHub and create the PR.
+Stop Point
+At this moment, your only next action is:
+👉 Run Step 2 (git clone)
+After that, paste the output of:
+Bash
+Copy code
+ls
+I will not jump ahead.
