@@ -15,7 +15,19 @@ Scope:
 - Authority externalization
 - Longitudinal drift risk
 
+## Downstream Reference — Chat Artifact Set: Unstable Mirrors (2026-02-12)
+
+Evidence Files:
+- inputs/transcripts/CHAT_UNSTABLE_MIRRORS_EVIDENCE.md
+- inputs/transcripts/CHAT_RUNTIME_FEEDBACK_TRACE.md
+- inputs/transcripts/CHAT_AUTHORITY_TRANSFER_TRACE.md
+- inputs/transcripts/CHAT_ARTIFACT_COMPARISON_NOTE.md
+
+Checksums:
+- governance_snapshots/CANONICAL_CHECKSUMS_2026-02-12.txt
+
 Authority Note:
-This repository records raw evidence only.
-Interpretation, governance judgment, and enforcement occur upstream
-under HHI_GOV_01 and associated standards.
+This repository records raw interaction evidence only.
+Governance interpretation and enforcement occur upstream
+under HHI_GOV_01 and related standards.
+
