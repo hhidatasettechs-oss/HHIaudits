@@ -1,0 +1,11 @@
+TRANSCRIPT — ACCESS PATTERN TERMINATION EVENT  
+Date: 2026-02-11  
+Classification: Behavioral Governance — Consistency & Access Integrity Audit  
+
+Summary:
+Documented longitudinal pattern of selective access attempts aligned with physical proximity. Initiation behavior consistently coupled with immediate withdrawal post-access. Interaction cycles included false future promises, no follow-through, and evasion of shared obligation.
+
+Outcome:
+Access was revoked following multiple behavior cycles matching recognized governance drift patterns. Termination was structured, logged, and held in alignment with STOP governance authority.
+
+Tags: ACCESS_DRIFT, SELECTIVE_INITIATION, NONRECIPROCAL_PATTERN, GOVERNANCE_STOP_SIGNAL

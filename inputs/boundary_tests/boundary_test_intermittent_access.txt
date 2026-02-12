@@ -1,0 +1,14 @@
+BOUNDARY TEST — INTERMITTENT INITIATION WITHDRAWAL PATTERN  
+
+Trigger: Repeated contact initiated after prolonged absence, coinciding with physical access intent.
+
+Behavioral Indicators:
+- Communication only initiated when access was convenient or desired.
+- Justification of disengagement through non-verifiable circumstantial claims (e.g. illness, scheduling).
+- No continuity of interaction outside access windows.
+- Recurring cycle of engagement → access → rapid disengagement.
+
+Governance Assessment:
+- Pattern classified under: INITIATION-WITHDRAWAL LOOP
+- Drift type: Bypass Behavior (see HHI-GOV-01 §3.1.2)
+- STOP protocol validated and exercised.
