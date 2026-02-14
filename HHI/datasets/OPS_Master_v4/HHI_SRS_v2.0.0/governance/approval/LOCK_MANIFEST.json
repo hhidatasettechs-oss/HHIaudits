@@ -1,0 +1,16 @@
+{
+  "artifact": "HHI_SRS_v2.0.0",
+  "artifact_type": "dataset_suite",
+  "lock_type": "governance-lock",
+  "authority": "Hollow House Institute",
+  "version": "2.0.0",
+  "locked_by": "Human Authority",
+  "lock_date": "2026-02-14",
+  "modification_policy": "immutable",
+  "upstream_authority": {
+    "glossary": "Hollow_House_Standards_Library",
+    "governance_standard": "HHI_GOV_01",
+    "license": "Master_License_Suite"
+  },
+  "notes": "Any modification requires a new version and governance lock."
+}
