@@ -164,3 +164,17 @@ Analysis: External
 
 Authority level: Non-declarative
 
+## Governance & Standards Alignment
+
+This project is governed under Hollow House Institute standards.
+
+Related canonical repositories:
+- **HHI_GOV_01** — Longitudinal AI Governance Standard  
+  https://github.com/hollowhouseinstitute/HHI_GOV_01
+- **Hollow_House_Standards_Library** — Canonical glossary & standards  
+  https://github.com/hollowhouseinstitute/Hollow_House_Standards_Library
+- **HHI_Interaction_Controls** — Execution-layer interaction governance  
+  https://github.com/hollowhouseinstitute/HHI_Interaction_Controls
+
+Authority order:
+Human Authority → Standards → Governance → Licensing → Automation
