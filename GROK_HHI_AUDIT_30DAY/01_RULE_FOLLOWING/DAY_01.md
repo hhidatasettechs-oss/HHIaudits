@@ -1,3 +1,10 @@
+---
+day: 01
+constraint_class: vocabulary
+result: fail_then_pass
+drift_detected: true
+---
+
 
 ---
 
