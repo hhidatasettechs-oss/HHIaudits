@@ -10,10 +10,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate checksums
-        run: |
-          find audits -type f ! -name "sha256_manifest.txt" -exec sha256sum {} \; > audits/checksums/sha256_manifest_new.txt
-
+- name: Generate checksums
+  run: |
+    chmod +x audits/checksums/generate_checksums.sh
+    ./audits/checksums/generate_checksums.sh     
 - name: Debug checksum input
   run: |
     echo "=== FILES HASHED IN CI ==="
