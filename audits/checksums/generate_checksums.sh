@@ -1,2 +1,11 @@
 #!/data/data/com.termux/files/usr/bin/bash
-find audits -type f ! -name "sha256_manifest.txt" -exec sha256sum {} \; > audits/checksums/sha256_manifest.txt
+
+# deterministic checksum generation
+
+find . -type f \
+  ! -path "./.git/*" \
+  ! -path "./CHECKSUMS.sha256" \
+  | sort \
+  | while read -r file; do
+    sha256sum "$file"
+  done
