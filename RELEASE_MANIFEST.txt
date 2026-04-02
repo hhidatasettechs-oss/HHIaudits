@@ -1,0 +1,8 @@
+HHI Audit Evidence Release
+Version: v1.0.0-audit-lock
+Date: 2026-04-02T22:52:43Z
+Contents:
+- evidence/
+- maps/
+- manifests/
+- schemas/

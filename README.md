@@ -1,3 +1,6 @@
+This repository is the canonical audit evidence layer for HHI systems.
+All artifacts are checksum-bound and audit-verifiable.
+
 # HHI Audits
 
 <!-- HHI_AUTHORITY_BLOCK_START -->

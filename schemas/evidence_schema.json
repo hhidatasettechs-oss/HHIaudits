@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "required": ["timestamp","system","control_id","event_type","state","actor","authority_chain","checksum","trace_id","severity","enforcement_action"],
+  "properties": {
+    "timestamp": {"type":"string"},
+    "system": {"type":"string"},
+    "control_id": {"type":"string"},
+    "event_type": {"type":"string"},
+    "state": {"type":"string"},
+    "actor": {"type":"string"},
+    "authority_chain": {"type":"string"},
+    "checksum": {"type":"string"},
+    "trace_id": {"type":"string"},
+    "severity": {"type":"string"},
+    "enforcement_action": {"type":"string"}
+  }
+}
