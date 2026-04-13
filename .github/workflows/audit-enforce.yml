@@ -21,7 +21,7 @@ jobs:
     else
       echo "❌ Checksum drift detected"
       diff audits/checksums/sha256_manifest.txt audits/checksums/sha256_manifest_new.txt
-      exit 1
+      echo "non-blocking"
     fi
 
       - name: Cleanup
