@@ -1,12 +1,33 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-OUTPUT="audits/checksums/sha256_manifest_new.txt"
+set -euo pipefail
+
+OUTPUT="audits/checksums/sha256_manifest.txt"
+
+echo "----------------------------------"
+echo "HHI Checksum Generation (Structural)"
+echo "----------------------------------"
+
+echo "Cleaning previous manifest..."
+rm -f "$OUTPUT"
+
+echo "Generating checksums..."
 
 find . -type f \
   ! -path "./.git/*" \
-  ! -path "./.github/*" \
-  ! -name "*CHECKSUMS.sha256" \
-  ! -name "*sha256_manifest*.txt" \
-  -print0 \
-| sort -z \
-| xargs -0 sha256sum > "$OUTPUT"
+  ! -path "./audits/checksums/sha256_manifest.txt" \
+  ! -path "./governance/telemetry.jsonl" \
+  ! -path "./node_modules/*" \
+  -exec sha256sum {} \; \
+  | sort > "$OUTPUT"
+
+echo "----------------------------------"
+echo "Checksums written to: $OUTPUT"
+echo "----------------------------------"
+
+echo "Sample output:"
+head -n 5 "$OUTPUT" || true
+
+echo "----------------------------------"
+echo "Checksum generation complete"
+echo "----------------------------------"
